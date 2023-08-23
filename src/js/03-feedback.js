@@ -29,6 +29,7 @@ function handlerSubmit(event) {
   console.log(JSON.parse(localStorage.getItem(LOCAL_KEY)));
   localStorage.removeItem(LOCAL_KEY);
   // event.curentTarget.reset();
-  form.elements.email.value = '';
-  form.elements.message.value = '';
+  form.reset();
+  // form.elements.email.value = '';
+  // form.elements.message.value = '';
 }
